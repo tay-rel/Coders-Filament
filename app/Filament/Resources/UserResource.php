@@ -31,6 +31,9 @@ class UserResource extends Resource
 
     protected static ?string $navigationGroup = 'Admin Management';
 
+    //SOlo se muestra a los usuarios . no a los administradores
+    //protected static bool $shouldRegsterNavigation =false;
+
     public static function form(Form $form): Form
     {
         return $form
